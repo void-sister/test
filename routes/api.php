@@ -14,3 +14,4 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/houses', 'HouseController@index');
+Route::get('/houses/search', 'HouseController@search');

@@ -15,7 +15,7 @@ class HouseCollection extends ResourceCollection
      public function toArray($request)
      {
          return [
-             'houses' => $this->collection
+             'data' => $this->collection
          ];
      }
 }
