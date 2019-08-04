@@ -19,8 +19,8 @@ class HouseController extends Controller
         $price_more = $request->get('price_more');
         $bedrooms = (int)$request->get('bedrooms');
         $bathrooms = (int)$request->get('bathrooms');
-        $storeys = $request->get('storeys');
-        $garages = $request->get('garages');
+        $storeys = (int)$request->get('storeys');
+        $garages = (int)$request->get('garages');
 
         return House::where('name', 'like', "%{$search_name}%")
                     ->whereBetween('price', [$price_more, $price_less])
