@@ -13,10 +13,6 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    <search-form></search-form>
-                    <br>
-                    <houses-table><houses-table>
                 </div>
             </div>
         </div>
